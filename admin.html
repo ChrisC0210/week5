@@ -14,9 +14,7 @@
   </head>
 
   <body>
-    <div class="d-flex">
-      <header>
-  <nav class="navbar nav-box d-block">
+        <nav class="navbar nav-box flex-column">
     <div class="container-fluid d-block">
       <h1 class="ms-5 mb-5">
         <a href="/week5">
@@ -68,14 +66,23 @@
       </div>  
     </div>
   </nav>
-</header>
-      
-<div class="container  mt-5">
-  <div class="d-flex">
+      <main class="main mb-5">
+        
+<div class="container">
+  <div class="d-flex justify-items-center pt-5 mb-2">
     <h2 class="fs-5 lh-base me-7">Admin</h2>
-    <h3 class="fs-3 lh-base d-flex align-items-center">
-      <span class="material-icons text-success">add</span>
-      All Courses</h3>
+    <div class="dropdown d-flex align-items-center">
+      <a class="m-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <h3 class="fs-3 lh-base fw-semibold d-flex align-items-center">
+          <span class="material-icons text-success">add</span>
+          All Courses
+        </h3>
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Courses 1</a></li>
+        <li><a class="dropdown-item" href="#">Courses 2</a></li>
+      </ul>
+    </div>
   </div>
 
   <div class="alert alert-primary" role="alert">
@@ -127,9 +134,10 @@
     </div>
   </div>
 </div>
-    </div>
+      </main>
 
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 
