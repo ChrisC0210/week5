@@ -5,61 +5,249 @@ engine: ejs
 current: index
 ---
 
-<div class="container mt-5">
-  <div class="d-flex">
-    <h2 class="fs-5 lh-base me-7">Assignment</h2>
-    <h3 class="fs-3 lh-base d-flex align-items-center">
-      All Courses
-      <span class="material-icons text-success">expand_more</span>
-    </h3>
+<div class="container">
+  <div class="d-flex justify-items-center justify-content-between pt-5 mb-2">
+    <div class="d-flex">
+      <h2 class="fs-5 lh-base me-7">Assignment</h2>
+      <div class="dropdown d-flex align-items-center">
+        <a class="m-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <h3 class="fs-3 lh-base fw-semibold d-flex align-items-center">
+            All Courses
+            <span class="material-icons text-success">expand_more</span>
+          </h3>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Courses 1</a></li>
+          <li><a class="dropdown-item" href="#">Courses 2</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <a href="#">
+        <span class="material-icons me-4">search</span>
+      </a>
+      <a href="#">
+        <span class="material-icons">notifications_active</span>
+      </a>
+    </div>
   </div>
 
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <a class=" " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+        aria-controls="collapseExample">
+        <h3 class="fs-3 lh-base fw-semibold d-flex align-items-center">
+          All (4)
+          <span class="material-icons text-success">expand_more</span>
+        </h3>
+      </a>
+      <div class="collapse show" id="collapseExample" role="tablist">
+        <ul class="list-group nav nav-tabs">
+          <li class="list-group-item" role="presentation">
+            <div class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+              aria-controls="home" aria-selected="true">
+              <div class="d-flex justify-content-between list-card">
+                <div class="list-card-text">
+                  <h4 class="fs-1 mb-1 fw-normal">Chapter Assignment 2</h4>
+                  <h5 class="fs-3 mb-0 fw-semibold d-inline-block text-truncate" style="width: 10rem;">Please check this
+                    file…</h5>
+                </div>
+                <div class="list-card-text text-end">
+                  <h5 class="fs-1 mb-1 fw-normal">4 hrs ago</h5>
+                  <p class="fs-1 mb-0">Emily Wang</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item" role="presentation">
+            <div class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+              role="tab" aria-controls="profile" aria-selected="false">
+              <div class="d-flex justify-content-between list-card">
+                <div class="list-card-text">
+                  <h4 class="fs-1 mb-1 fw-normal">Chapter Assignment 1</h4>
+                  <h5 class="fs-3 mb-0 fw-semibold d-inline-block text-truncate" style="width: 10rem;">My Homework</h5>
+                </div>
+                <div class="list-card-text text-end">
+                  <h5 class="fs-1 mb-1 fw-normal">12 hrs ago</h5>
+                  <p class="fs-1 mb-0">David Xu</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item" role="presentation">
+            <div class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button"
+              role="tab" aria-controls="messages" aria-selected="false">
+              <div class="d-flex justify-content-between list-card">
+                <div class="list-card-text">
+                  <h4 class="fs-1 mb-1 fw-normal">Chapter Assignment 1</h4>
+                  <h5 class="fs-3 mb-0 fw-semibold d-inline-block text-truncate" style="width: 10rem;">My Homework</h5>
+                </div>
+                <div class="list-card-text text-end">
+                  <h5 class="fs-1 mb-1 fw-normal">12 hrs ago</h5>
+                  <p class="fs-1 mb-0">David Xu</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item" role="presentation">
+            <div class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button"
+              role="tab" aria-controls="settings" aria-selected="false">
+              <div class="d-flex justify-content-between list-card">
+                <div class="list-card-text">
+                  <h4 class="fs-1 mb-1 fw-normal">Chapter Assignment 1</h4>
+                  <h5 class="fs-3 mb-0 fw-semibold d-inline-block text-truncate" style="width: 10rem;">My Homework</h5>
+                </div>
+                <div class="list-card-text text-end">
+                  <h5 class="fs-1 mb-1 fw-normal">12 hrs ago</h5>
+                  <p class="fs-1 mb-0">David Xu</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-8">
+      <div>
+      </div>
+      <!-- Tab panes -->
+      <div class="tab-content mb-5">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <p class="text-end fs-1 fw-normal">2 comments</p>
+          <div class="card">
+            <div class="card-header">
+              <div class="d-flex justify-content-between list-card">
+                <div class="list-card-text">
+                  <h4 class="fs-1 mb-1 fw-normal">Chapter Assignment 2 / HTML&CSS</h4>
+                  <h5 class="fs-3 mb-0 fw-semibold">Please check this file for me, thanks!</h5>
+                </div>
+                <div class="list-card-text text-end d-flex align-items-center">
+                  <a href="#">
+                    <span class="material-icons">more_vert</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="ms-3 mb-3 pt-3">
+                <div class="d-flex user-card">
+                  <div class="user-card-img me-2">
+                    <img src="../assets/images/emilywang.jpeg" class="img-fluid rounded-circle" alt="andychen">
+                  </div>
+                  <div class="user-card-text">
+                    <h5 class="fs-3 mb-1 fw-semibold">Emily Wang</h5>
+                    <p class="fs-2 mb-0">10:38 AM (4 hours ago)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-8 mx-5">
+                <p class="fs-2 mb-0">
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                  following code the height of the
+                  <code class="text-success bg-light px-1 rounded-1 font-mono">div</code> is bigger than the height of
+                  the
+                  <code class="text-success bg-light px-1 rounded-1 font-mono">img</code>
+                  ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                </p>
+                <p class="fs-2 mb-3">What is the gap or extra space below image?</p>
+                <a href="#" class="fs-3 btn btn-light border" download="HW-2-David.zip">HW-2-David.zip</a>
+                <hr class="mb-2">
+              </div>
+                <!-- user you -->
+                <div id="userInfo">
+                  <div class="ms-3 mb-3">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex user-card">
+                        <div class="user-card-img me-2">
+                          <img src="../assets/images/andychen.jpeg" class="img-fluid rounded-circle" alt="andychen">
+                        </div>
+                        <div class="user-card-text">
+                          <h5 class="fs-3 mb-1 fw-semibold">Andy Chen (You)</h5>
+                          <p class="fs-2 mb-0">13:24 AM (1 hours ago)</p>
+                        </div>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <span class="material-icons me-4">star_rate</span>
+                        </a>
+                        <a href="#">
+                          <span class="material-icons me-5">edit</span>
+                        </a>
+                      </div>
+                    </div>
+  
+                  </div>
+                  <div class="ms-8 mx-5">
+                    <p class="fs-2 mb-0">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+                    </p>
+                    <p class="fs-2 mb-4 mt-4">You can: </p>
+                    <ul class="ps-4">
+                      <li class="fs-2 mb-0">
+                        adjust the 
+                        <code class="text-success bg-light px-1 rounded-1 font-mono">vertical-align</code>
+                        of the image to position it elsewhere (e.g. the 
+                        <code class="text-success bg-light px-1 rounded-1 font-mono">middle</code>                      
+                        ) or 
+                      </li>
+                      <li class="fs-2 mb-0">
+                        change the <code class="text-success bg-light px-1 rounded-1 font-mono">display</code> so it isn’t inline.
+                        </li>
+                    </ul>
+                  </div>
+                </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+                <!-- user you -->
+              <!-- test -->
+              <div class="collapse collapse-edit" id="btnReply">
+                <!-- edit -->
+                <div class="editor">
+                  <textarea id="editor" placeholder="Reply an answer…"></textarea>
+                  <div class="position-relative">
+                    <div class="position-absolute bottom-0 end-0">
+                      <div class="d-flex mb-3">
+                        <button type="button" class="ms-2 pt-2 pb-2 p-5 btn btn-outline-success">Cancel</button>
+                        <button type="button" class="mx-4 pt-2 pb-2 p-5 btn btn-success" data-bs-toggle="collapse"
+                          data-bs-target="#btnReply" aria-expanded="false" aria-controls="btnReply">Reply</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- edit -->
+              </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+
+          </div>
+          <!-- btn -->
+          <p id="btnGroup">
+            <div class="position-relative">
+              <div class="position-absolute top-100 start-0">
+                <a href="#">
+                <span class="material-icons">chevron_left</span>
+                </a>
+                <a href="#">
+                <span class="material-icons mx-4">chevron_right</span>
+                </a>
+              </div>
+              <div class="position-absolute top-100 end-0">
+                <div>
+                  <button type="button" class="mx-2 pt-2 pb-2 p-5 btn btn-outline-success">Mark as read</button>
+                  <button type="button" class="pt-2 pb-2 p-5 btn btn-success" data-bs-toggle="collapse"
+                    data-bs-target="#btnReply" aria-expanded="false" aria-controls="btnReply">Reply</button>
+                </div>
+              </div>
+            </div>
+          </p>
+          <!-- btn -->
+        </div>
+        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">2</div>
+        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">3</div>
+        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">4</div>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+
+
     </div>
   </div>
 </div>

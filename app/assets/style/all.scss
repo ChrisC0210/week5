@@ -1,9 +1,18 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "./helpers/utilities";
-//Customize Font Size
+//customize font size
 @import "./helpers/fontSize";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+//base
+@import "./base/reset";
+//components
+@import './components/icon';
+@import './components/card';
+//layout
+@import './layout/header';
+@import './layout/main';
+//vendors
+@import './vendors/ckeditor';
 //page
-@import './layout/header.scss';
-@import './pages/index.scss';
+@import './pages/index';
