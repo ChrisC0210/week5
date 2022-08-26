@@ -17,6 +17,7 @@ $utilities: map-merge(
       map-get($utilities, "font-size"),
       (
         values: $font-sizes,
+        responsive: true,//sm md lg
       ),
     ),
   )

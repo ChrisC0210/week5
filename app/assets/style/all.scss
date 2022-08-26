@@ -4,6 +4,7 @@
 //customize font size
 @import "./helpers/fontSize";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "./helpers/color";
 //base
 @import "./base/reset";
 //components
@@ -14,5 +15,3 @@
 @import './layout/main';
 //vendors
 @import './vendors/ckeditor';
-//page
-@import './pages/index';

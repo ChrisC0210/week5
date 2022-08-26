@@ -16,22 +16,20 @@
     }
   }
 }
-.list-card{
-  &-img{
-    width: 40px;
-    height: 40px;
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  &-text{
-    h4,h5{
-      color: $gray-900;
-    }
-    p{
-      color: $gray-600;
-    }
-  }
+.modal-dialog{
+  max-width: 480px;
+}
+//
+.expand_more {
+  display: none;
+}
+.expand_less {
+  display: inline-block;
+}
+.collapsed .expand_more {
+  display: inline-block;
+}
+
+.collapsed .expand_less {
+  display: none;
 }
