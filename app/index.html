@@ -79,12 +79,12 @@ current: index
               role="tab" aria-controls="messages" aria-selected="false">
               <div class="d-flex justify-content-between list-card">
                 <div class="list-card-text">
-                  <h4 class="fs-1 mb-1 fw-normal">Chapter Assignment 1</h4>
-                  <h5 class="fs-3 mb-0 fw-semibold d-inline-block text-truncate" style="width: 10rem;">My Homework</h5>
+                  <h4 class="fs-1 mb-1 fw-normal">Final Assignment</h4>
+                  <h5 class="fs-3 mb-0 fw-semibold d-inline-block text-truncate" style="width: 10rem;">Have a problem with this…</h5>
                 </div>
                 <div class="list-card-text text-end">
-                  <h5 class="fs-1 mb-1 fw-normal">12 hrs ago</h5>
-                  <p class="fs-1 mb-0">David Xu</p>
+                  <h5 class="fs-1 mb-1 fw-normal">18 hrs ago</h5>
+                  <p class="fs-1 mb-0">Tony Wei</p>
                 </div>
               </div>
             </div>
@@ -94,12 +94,12 @@ current: index
               role="tab" aria-controls="settings" aria-selected="false">
               <div class="d-flex justify-content-between list-card">
                 <div class="list-card-text">
-                  <h4 class="fs-1 mb-1 fw-normal">Chapter Assignment 1</h4>
-                  <h5 class="fs-3 mb-0 fw-semibold d-inline-block text-truncate" style="width: 10rem;">My Homework</h5>
+                  <h4 class="fs-1 mb-1 fw-normal">Final Assignment</h4>
+                  <h5 class="fs-3 mb-0 fw-semibold d-inline-block text-truncate" style="width: 10rem;">Did I do it right?</h5>
                 </div>
                 <div class="list-card-text text-end">
-                  <h5 class="fs-1 mb-1 fw-normal">12 hrs ago</h5>
-                  <p class="fs-1 mb-0">David Xu</p>
+                  <h5 class="fs-1 mb-1 fw-normal">19 hrs ago</h5>
+                  <p class="fs-1 mb-0">Christina Lin</p>
                 </div>
               </div>
             </div>
@@ -168,7 +168,7 @@ current: index
                       </div>
                       <div>
                         <a href="#">
-                          <span class="material-icons me-4">star_rate</span>
+                          <span class="material-symbols-outlined me-4">star_rate</span>
                         </a>
                         <a href="#">
                           <span class="material-icons me-5">edit</span>
@@ -199,16 +199,16 @@ current: index
 
                 <!-- user you -->
               <!-- test -->
-              <div class="collapse collapse-edit" id="btnReply">
+              <div class="collapse collapse-edit" id="btnReplyInfo">
                 <!-- edit -->
                 <div class="editor">
                   <textarea id="editor" placeholder="Reply an answer…"></textarea>
                   <div class="position-relative">
                     <div class="position-absolute bottom-0 end-0">
                       <div class="d-flex mb-3">
-                        <button type="button" class="ms-2 pt-2 pb-2 p-5 btn btn-outline-success">Cancel</button>
-                        <button type="button" class="mx-4 pt-2 pb-2 p-5 btn btn-success" data-bs-toggle="collapse"
-                          data-bs-target="#btnReply" aria-expanded="false" aria-controls="btnReply">Reply</button>
+                        <button type="button" class="ms-2 pt-2 pb-2 p-5 btn btn-outline-success" data-bs-toggle="collapse"
+                        data-bs-target="#userInfo" aria-expanded="false" aria-controls="userInfo">Cancel</button>
+                        <button type="button" class="mx-4 pt-2 pb-2 p-5 btn btn-success">Reply</button>
                       </div>
                     </div>
                   </div>
@@ -221,9 +221,9 @@ current: index
 
           </div>
           <!-- btn -->
-          <p id="btnGroup">
-            <div class="position-relative">
-              <div class="position-absolute top-100 start-0">
+          <p >
+            <div class="d-flex justify-content-between" id="btnGroup">
+              <div>
                 <a href="#">
                 <span class="material-icons">chevron_left</span>
                 </a>
@@ -231,11 +231,11 @@ current: index
                 <span class="material-icons mx-4">chevron_right</span>
                 </a>
               </div>
-              <div class="position-absolute top-100 end-0">
+              <div>
                 <div>
                   <button type="button" class="mx-2 pt-2 pb-2 p-5 btn btn-outline-success">Mark as read</button>
                   <button type="button" class="pt-2 pb-2 p-5 btn btn-success" data-bs-toggle="collapse"
-                    data-bs-target="#btnReply" aria-expanded="false" aria-controls="btnReply">Reply</button>
+                    data-bs-target="#btnReplyInfo" aria-expanded="false" aria-controls="btnReplyInfo">Reply</button>
                 </div>
               </div>
             </div>
