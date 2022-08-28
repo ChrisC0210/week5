@@ -4890,7 +4890,7 @@ fieldset:disabled .btn {
   color: #0d6efd;
   text-decoration: none;
   background-color: #fff;
-  border: 1px solid #dee2e6;
+  border: 1px solid #198754;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -4902,9 +4902,9 @@ fieldset:disabled .btn {
 
 .page-link:hover {
   z-index: 2;
-  color: #0a58ca;
-  background-color: #e9ecef;
-  border-color: #dee2e6;
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
 }
 
 .page-link:focus {
@@ -4922,8 +4922,8 @@ fieldset:disabled .btn {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #198754;
+  border-color: #198754;
 }
 
 .page-item.disabled .page-link {
@@ -11748,6 +11748,24 @@ a:hover, a:focus, a:active {
 
 .collapsed .expand_less {
   display: none;
+}
+
+.page-item {
+  min-width: 32px;
+  min-height: 32px;
+}
+
+.page-item .page-link {
+  align-items: center;
+  display: flex;
+}
+
+.page-item .page-link .material-icons {
+  color: #198754;
+}
+
+.page-item .page-link .material-icons:hover, .page-item .page-link .material-icons:focus, .page-item .page-link .material-icons:active {
+  color: #fff;
 }
 
 .ck-editor__editable_inline {
