@@ -33,3 +33,18 @@
 .collapsed .expand_less {
   display: none;
 }
+//page
+.page-item{
+  min-width: 32px;
+  min-height: 32px;
+  .page-link{
+    align-items: center;
+    display: flex;
+    .material-icons{
+      color: $green;
+      &:hover, &:focus, &:active{
+        color: $white;
+      }
+    }
+  }
+}
